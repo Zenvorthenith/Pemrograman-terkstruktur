@@ -1,0 +1,30 @@
+class Keluarga:
+    def __init__(self, nama):
+        self.nama = nama
+
+    def peran(self):
+        print("Anggota keluarga memiliki peran masing-masing")
+
+
+class Ayah(Keluarga):
+    def peran(self):
+        print(self.nama, "berperan sebagai pencari nafkah")
+
+
+class Ibu(Keluarga):
+    def peran(self):
+        print(self.nama, "berperan mengurus rumah dan keluarga")
+
+
+class Anak(Keluarga):
+    def peran(self):
+        print(self.nama, "berperan belajar dan membantu orang tua")
+
+
+ayah = Ayah("Bapak Rifqi")
+ibu = Ibu("Ibu Rifqi")
+anak = Anak("Rifqi")
+
+ayah.peran()
+ibu.peran()
+anak.peran() 
